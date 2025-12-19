@@ -1,0 +1,13 @@
+# VS Code 設定
+. vscode/
+
+# Office 檔案
+*.pptx
+*.docx
+*.xlsx
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
