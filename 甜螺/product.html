@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甜螺 katatsumuri</title>
+    <link rel="icon" href="../../小專/image/logo.png">
+    <link rel="stylesheet" href="kata.css">
+    <link rel="stylesheet" href="product.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font-awesome - Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<body>
+    <!-- 頁首 -->
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="kata.html"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                        viewBox="0 -960 960 960" width="26px" fill="bisque">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a href="https://www.instagram.com/katatsumuri_2020/">instagram</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100064318952721&mibextid=LQQJ4d">Facebook</a></li>
+            <li><a href="news.html">最新消息</a></li>
+            <li><a href="product.html">甜點介紹</a></li>
+            <li><a href="QA.html">常見問題</a></li>
+            <li><a href="kata.html">主頁</a></li>
+        </ul>
+
+        <ul>
+            <li class="logo-container"><a href="kata.html"><img src="../../小專/image/logo.png" alt="katatsumuri" class="logo"></a>
+            </li>
+            <li class="hideOnMobile"><a href="https://www.instagram.com/p/Cnb8r9DvZxL/">Instagram</a></li>
+            <li class="hideOnMobile"><a
+                    href="https://www.facebook.com/profile.php?id=100064318952721&mibextid=LQQJ4d">Facebook</a></li>
+            <li class="hideOnMobile"><a href="news.html">最新消息</a></li>
+            <li class="hideOnMobile"><a href="product.html">甜點介紹</a></li>
+            <li class="hideOnMobile"><a href="QA.html">常見問題</a></li>
+            <li class="hideOnMobile"><a href="kata.html">主頁</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="26px" viewBox="0 -960 960 960" width="26px" fill="bisque">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+
+
+    <!-- 產品介紹小卡 -->
+    <div class="title">
+        <h2>甜點介紹</h2>
+        <h3>點擊圖片可觀看更多詳細資訊~</h3>
+    </div>
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> 全部品項 </button>
+        <button class="btn" onclick="filterSelection('cakes')"> 戚風蛋糕 </button>
+        <button class="btn" onclick="filterSelection('tart')"> 法式小塔 </button>
+        <button class="btn" onclick="filterSelection('others')"> 其他甜點 </button>
+    </div>
+    <!-- 作品集畫廊網格 -->
+    <div class="row">
+        <div class="column cakes">
+            <button class="product-card-btn" data-name="梅酒凍柚香葡萄" data-img="../../小專/image/6吋梅酒凍柚香葡萄 .jpg" data-size="6吋"
+                data-intro="
+                - 蜜香紅茶棉花戚風蛋糕
+                - 新鮮青葡萄
+                - 日本柚子凝乳
+                - 梅酒凍
+                - 日本北海道中澤奶霜
+                - 蜜香紅茶香緹（中澤奶霜基底）
+                - Q梅果丁、自製乾燥檸檬片"
+                data-price="六吋(6-8人份)NT$1350">
+                <div class="content">
+                    <img src="../../小專/image/6吋梅酒凍柚香葡萄 .jpg" alt="6吋梅酒凍柚香葡萄" style="width:100%">
+                    <h4>梅酒凍柚香葡萄</h4>
+                    <p>6吋</p>
+                </div>
+            </button>
+        </div>
+        <div class="column cakes">
+            <button class="product-card-btn" data-name="草莓棉花戚風蛋糕" data-img="../../小專/image/6吋草莓棉花戚風蛋糕.jpg" data-size="6吋"
+                data-intro="
+                蓬鬆綿密的棉花戚風搭配香醇卻不膩口的北海道奶霜，最後來一點酸甜的大湖草莓，很簡單卻很經典，是冬天絕不能錯過的風味！🍓
+                ｜雲林口湖無毒金鑽粉紅蛋｜
+                ｜日本北海道奶霜｜
+                ｜新鮮大湖草莓｜"
+                data-price="六吋(6-8人份)NT$1600">
+                <div class="content">
+                    <img src="../../小專/image/6吋草莓棉花戚風蛋糕.jpg" alt="6吋草莓棉花戚風蛋糕" style="width:100%">
+                    <h4>草莓棉花戚風蛋糕</h4>
+                    <p>6吋</p>
+                </div>
+            </button>
+        </div>
+        <div class="column cakes">
+            <button class="product-card-btn" data-name="胭脂芭樂金萱茶戚風蛋糕" data-img="../../小專/image/6吋胭脂芭樂金萱茶戚風蛋糕.jpg"
+                data-size="6吋" data-intro="
+                - 阿里山金萱茶棉花戚風蛋糕
+                - 焦糖漬蘋果
+                - 胭脂紅茶凍
+                - 日本北海道中澤奶霜
+                - 紅心芭樂香緹（中澤奶霜基底）
+                - 新鮮紅心芭樂、藍莓、自製乾燥蘋果片"
+                data-price="六吋(6-8人份)NT$1350">
+                <div class="content">
+                    <img src="../../小專/image/6吋胭脂芭樂金萱茶戚風蛋糕.jpg" alt="6吋胭脂芭樂金萱茶戚風蛋糕" style="width:100%">
+                    <h4>胭脂芭樂金萱茶戚風蛋糕</h4>
+                    <p>6吋</p>
+                </div>
+            </button>
+        </div>
+        <div class="column cakes">
+            <button class="product-card-btn" data-name="青葡萄棉花戚風蛋糕" data-img="../../小專/image/6吋青葡萄棉花戚風蛋糕.jpg"
+                data-size="6吋" data-intro="
+                酸甜的青葡萄加上清爽的北海道奶霜與輕盈的棉花戚風，直接榮獲店內爽朗第一名！"
+                data-price="六吋(6-8人份)NT$1200">
+                <div class="content">
+                    <img src="../../小專/image/6吋青葡萄棉花戚風蛋糕.jpg" alt="6吋青葡萄棉花戚風蛋糕" style="width:100%">
+                    <h4>青葡萄棉花戚風蛋糕</h4>
+                    <p>6吋</p>
+                </div>
+            </button>
+        </div>
+        <div class="column cakes">
+            <button class="product-card-btn" data-name="雙色哈密瓜棉花戚風" data-img="../../小專/image/6吋雙色哈密瓜棉花戚風.jpg"
+                data-size="6吋" data-intro="
+                雙色真的是可遇不可求，很常手邊有兩種顏色的哈密瓜，但可能熟度都不同就沒辦法製作
+                所以取蛋糕時如果收到的是雙色哈密瓜戚風那真的很幸運！"
+                data-price="六吋(6-8人份)NT$1200">
+                <div class="content">
+                    <img src="../../小專/image/6吋雙色哈密瓜棉花戚風.jpg" alt="6吋雙色哈密瓜棉花戚風" style="width:100%">
+                    <h4>雙色哈密瓜棉花戚風</h4>
+                    <p>6吋</p>
+                </div>
+            </button>
+        </div>
+        <div class="column cakes">
+            <button class="product-card-btn" data-name="初夏" data-img="../../小專/image/6吋初夏.jpg"
+                data-size="6吋" data-intro="
+                - 帶有淡淡柚子花香的金萱茶棉花戚風
+                - 焦香酸甜的香草鳳梨
+                - 百香果與金桔交融的酸爽慕斯
+                - 茶香四溢的柚香金萱香緹
+                - 清爽不甜膩的日本北海道中沢奶霜
+                - 酸甜的自製無糖鳳梨花果乾"
+                data-price="六吋(6-8人份)NT$1280">
+                <div class="content">
+                    <img src="../../小專/image/6吋初夏.jpg" alt="6吋初夏" style="width:100%">
+                    <h4>初夏</h4>
+                    <p>6吋</p>
+                </div>
+            </button>
+        </div>
+        <div class="column cakes">
+            <button class="product-card-btn" data-name="鳳梨桂花烏龍茶戚風蛋糕" data-img="../../小專/image/6吋鳳梨桂花烏龍茶戚風蛋糕.jpg"
+                data-size="6吋" data-intro="
+                - 帶有桂花與貴妃烏龍茶香的棉花戚風蛋糕
+                - 酸甜的糖漬香草鳳梨
+                - 香味芬芳的軟Q桂花凍
+                - 清爽不甜膩的日本北海道中澤奶霜
+                - 香甜的自製無糖鳳梨花果乾"
+                data-price="六吋(6-8人份)NT$1200">
+                <div class="content">
+                    <img src="../../小專/image/6吋鳳梨桂花烏龍茶戚風蛋糕.jpg" alt="6吋鳳梨桂花烏龍茶戚風蛋糕" style="width:100%">
+                    <h4>鳳梨桂花烏龍茶戚風蛋糕</h4>
+                    <p>6吋</p>
+                </div>
+            </button>
+        </div>
+        <div class="column cakes">
+            <button class="product-card-btn" data-name="蜜桃梅凍茉莉戚風蛋糕" data-img="../../小專/image/6吋蜜桃梅凍茉莉戚風蛋糕.jpg"
+                data-size="6吋" data-intro="
+                這款是以茉莉綠茶做成的棉花戚風蛋糕，搭配上香甜的水蜜桃與脆梅Q凍以及日本中澤奶霜
+                每一層都有不同的風味與口感，層次與口味非常豐富！"
+                data-price="六吋(6-8人份)NT$1450">
+                <div class="content">
+                    <img src="../../小專/image/6吋蜜桃梅凍茉莉戚風蛋糕.jpg" alt="6吋蜜桃梅凍茉莉戚風蛋糕" style="width:100%">
+                    <h4>蜜桃梅凍茉莉戚風蛋糕</h4>
+                    <p>6吋</p>
+                </div>
+            </button>
+        </div>
+
+        <div class="column tart">
+            <button class="product-card-btn" data-name="經典生巧克力塔" data-img="../../小專/image/經典生巧克力塔.jpg" data-size="單一尺寸"
+                data-intro="
+                ｜法芙娜66%加勒比巧克力｜
+                ｜法芙娜70%瓜納拉巧克力｜
+                製成的生巧克力餡，撒上無糖可可粉，微苦滑順的生巧克力搭配酥脆的招牌塔殼，喜歡巧克力的人別錯過！"
+                data-price="NT$130">
+                <div class="content">
+                    <img src="../../小專/image/經典生巧克力塔.jpg" alt="經典生巧克力塔" style="width:100%">
+                    <h4>經典生巧克力塔</h4>
+                    <p>法芙娜66%加勒比、
+                        <br>70%瓜納拉巧克力
+                    </p>
+                </div>
+            </button>
+        </div>
+        <div class="column tart">
+            <button class="product-card-btn" data-name="柚香抹茶塔" data-img="../../小專/image/柚香抹茶塔.jpg" data-size="單一尺寸"
+                data-intro="
+                米歇爾33%白巧克力與小山園若竹
+                形成了口感滑順且風味濃厚的抹茶甘那許
+                搭配蜜漬柚子丁以及柚子凝乳
+                一口咬下後先是清爽酸甜和滿滿的柚子香氣
+                再來是抹茶甘那許濃郁且微苦的風味
+                兩個看似完全不同的元素
+                結合後卻有著獨特的魅力！"
+                data-price="NT$180">
+                <div class="content">
+                    <img src="../../小專/image/柚香抹茶塔.jpg" alt="柚香抹茶塔" style="width:100%">
+                    <h4>柚香抹茶塔</h4>
+                    <p>小山園若竹、
+                        <br>蜜漬柚子丁以及柚子凝乳、
+                        <br>米歇爾33%白巧克力
+                    </p>
+                </div>
+            </button>
+        </div>
+        <div class="column tart">
+            <button class="product-card-btn" data-name="芒果香草卡士達塔" data-img="../../小專/image/芒果香草卡士達塔.jpg" data-size="單一尺寸"
+                data-intro="
+                招牌塔皮擠上低糖杏仁奶油餡烤至漂亮的焦褐色，
+                鋪上自熬的酸甜芒果果粒醬後填入馬達加斯加香草卡士達，最後撒上香甜的枋山愛文芒果丁🥭"
+                data-price="NT$140">
+                <div class="content">
+                    <img src="../../小專/image/芒果香草卡士達塔.jpg" alt="芒果香草卡士達塔" style="width:100%">
+                    <h4>芒果香草卡士達塔</h4>
+                    <p>枋山愛文芒果丁</p>
+                </div>
+            </button>
+        </div>
+        <div class="column tart">
+            <button class="product-card-btn" data-name="草莓香草卡士達塔" data-img="../../小專/image/草莓香草卡士達塔.jpg" data-size="單一尺寸"
+                data-intro="
+                依舊經典的水果卡士達塔系列，一口咬下香草與草莓的香氣直接撲鼻而來，趁著草莓季一定要吃看看！🍓"
+                data-price="NT$180">
+                <div class="content">
+                    <img src="../../小專/image/草莓香草卡士達塔.jpg" alt="草莓香草卡士達塔" style="width:100%">
+                    <h4>草莓香草卡士達塔</h4>
+                    <p>新鮮大湖草莓</p>
+                </div>
+            </button>
+        </div>
+        <div class="column tart">
+            <button class="product-card-btn" data-name="藍莓香草卡士達塔" data-img="../../小專/image/藍莓香草卡士達塔.png" data-size="單一尺寸"
+                data-intro="
+                此款藍莓塔為芒果塔的翻版，
+                杏仁奶油餡上改為自熬的酸甜藍莓醬，
+                擠上馬達加斯加香草卡士達後再鋪上滿出來的新鮮藍莓🫐～
+                一口咬下都是藍莓的清香🥴"
+                data-price="NT$160">
+                <div class="content">
+                    <img src="../../小專/image/藍莓香草卡士達塔.png" alt="藍莓香草卡士達塔" style="width:100%">
+                    <h4>藍莓香草卡士達塔</h4>
+                    <p>自熬的酸甜藍莓醬</p>
+                </div>
+            </button>
+        </div>
+
+        <div class="column others">
+            <button class="product-card-btn" data-name="本和香糖布丁" data-img="../../小專/image/本和香糖布丁.jpg" data-size="一入"
+                data-intro="
+                帶點苦韻的焦糖結合微紮實卻綿密濃醇的香草布丁，搭配日本北海道奶霜與帶點蘭姆酒香的尾韻，有看到它的身影時請務必品嚐看看！
+                ｜雲林口湖無毒金鑽粉紅蛋｜
+                ｜日本沖繩本和香糖｜
+                ｜日本北海道奶霜｜
+                ｜馬達加斯加香草｜"
+                data-price="NT$200">
+                <div class="content">
+                    <img src="../../小專/image/本和香糖布丁.jpg" alt="本和香糖布丁" style="width:100%">
+                    <h4>本和香糖布丁</h4>
+                    <p>日本沖繩本和香糖、
+                        <br>北海道奶霜、
+                        <br>雲林口湖無毒金鑽粉紅蛋
+                    </p>
+                </div>
+            </button>
+        </div>
+        <div class="column others">
+            <button class="product-card-btn" data-name="螺酥" data-img="../../小專/image/螺酥種類.jpg" data-size="一入" data-intro="
+                口味：
+                【 法芙娜巧克力卡士達螺酥 】
+                【 覆盆子蔓越莓卡士達螺酥 】
+                【 小山園抹茶卡士達螺酥 】
+                【 經典香草卡士達螺酥 】
+                "
+                data-price="NT$100">
+                <div class="content">
+                    <img src="../../小專/image/螺酥種類.jpg" alt="螺酥" style="width:100%">
+                    <h4>螺酥</h4>
+                    <p>法芙娜巧克力卡士達螺酥、
+                        <br>覆盆子蔓越莓卡士達螺酥、
+                        <br>小山園抹茶卡士達螺酥、
+                        <br>經典香草卡士達螺酥
+                    </p>
+                </div>
+            </button>
+        </div>
+        <div class="column others">
+            <button class="product-card-btn" data-name="常溫餅乾" data-img="../../小專/image/常溫餅乾.jpg" data-size="三入一組" data-intro="
+                招牌鹽之花布列塔尼、珍珠糖小泡芙、杏仁瓦片，三款經典常溫餅乾組合成禮盒，無論是自用或送禮都很適合！
+                ｜鹽之花布列塔尼｜
+                ｜珍珠糖小泡芙｜
+                ｜杏仁瓦片｜"
+                data-price="NT$250">
+                <div class="content">
+                    <img src="../../小專/image/常溫餅乾.jpg" alt="常溫餅乾" style="width:100%">
+                    <h4>常溫餅乾</h4>
+                    <p>鹽之花布列塔尼、
+                        <br>珍珠糖小泡芙、
+                        <br>杏仁瓦片
+                    </p>
+                </div>
+            </button>
+        </div>
+        <div class="column others">
+            <button class="product-card-btn" data-name="2025 新年餅乾禮盒" data-img="../../小專/image/2025新年餅乾禮盒.jpg" data-size="禮盒 - 附提袋" data-intro="
+                ▘杏仁雙重巧克力義式脆餅*6
+                ▘野莓維也納酥餅*4
+                ▘香草雪球*6
+                ▘鹽之花布列塔尼酥餅*3
+                ▘小山園抹茶夾心餅乾*6
+                ▘蜜香紅茶鑽石餅乾*4
+                ▘青檸/覆盆莓馬林糖*12（各6顆）
+                ▘焦糖夏威夷豆脆餅*5
+                ▘辣味香料起司餅乾*9"
+                data-price="NT$930">
+                <div class="content">
+                    <img src="../../小專/image/2025新年餅乾禮盒.jpg" alt="2025 新年餅乾禮盒" style="width:100%">
+                    <h4>2025 新年餅乾禮盒</h4>
+                    <p>選用法國A.O.P發酵奶油與日本奧本麵粉製成
+                    <br>基本上為蛋奶素，除了辣味香料起司餅乾為五辛素
+                    </p>
+                </div>
+            </button>
+        </div>
+        <div class="column others">
+            <button class="product-card-btn" data-name="鹽之花麻糬蛋黃酥禮盒" data-img="../../小專/image/鹽之花麻糬蛋黃酥禮盒.jpg" data-size="禮盒 - 6入裝"
+                data-intro="
+                - 法國無水奶油與日本麵粉桿成的層層酥鬆外皮
+                - Q彈的麻糬與法國發酵奶油製成的低糖綿密烏豆沙
+                - 油潤鹹香的現敲紅土鹹鴨蛋黃
+                - 鹹味細緻輕柔且圓潤回甘的法國鹽之花"
+                data-price="NT$600">
+                <div class="content">
+                    <img src="../../小專/image/鹽之花麻糬蛋黃酥禮盒.jpg" alt="鹽之花麻糬蛋黃酥禮盒" style="width:100%">
+                    <h4>鹽之花麻糬蛋黃酥禮盒</h4>
+                    <p>6入裝［蛋奶素］</p>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <!-- 產品資訊彈窗 -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-left">
+                    <img id="modalImg" src="" alt="">
+                </div>
+                <div class="modal-right">
+                    <h2 id="productName"></h2>
+                    <p class="modal-size">規格：<span id="productSize"></span></p>
+                    <p class="modal-price">價格：<span id="productPrice"></span></p>
+                    <div class="modal-intro">
+                        <h3>產品介紹</h3>
+                        <p id="productIntro"></p>
+                    </div>
+                    <div class="modal-actions">
+                        <button class="go-to-shopping" onclick="goToOrder()">私訊預訂</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg></button>
+
+    <!-- Footer -->
+    <div class="footerContainer">
+        <section class="newsletter">
+            <p>歡迎訂閱甜螺電子報，可不定期接收到限定優惠哦！</p>
+            <form>
+                <input type="email" placeholder="請輸入您的E-mail" required>
+                <button type="submit">送出</button>
+            </form>
+        </section>
+        <div class="footerBox">
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/profile.php?id=100064318952721&mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/katatsumuri_2020/"><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-line"></i></a>
+                <a href="https://www.google.com/maps/place/%E7%94%9C%E8%9E%BA%E3%82%AB%E3%82%BF%E3%83%84%E3%83%A0%E3%83%AA(%E5%85%AC%E4%BC%91%E6%97%A5%E8%AB%8B%E5%8F%83%E8%80%83%E7%A4%BE%E7%BE%A4%EF%BC%89/@23.8018373,120.4612347,18z/data=!4m6!3m5!1s0x346eb54e348db515:0x300202f6b535d0d7!8m2!3d23.801837!4d120.462284!16s%2Fg%2F11k4fqyy0z?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D"><i class="fa-brands fa-google"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="copyright">Copyright © 2020 甜螺甜點工作室 All Right Reserved.</p>
+    </footer>
+
+    <script src="kata.js"></script>
+    <script src="product.js"></script>
+</body>
+
+</html>

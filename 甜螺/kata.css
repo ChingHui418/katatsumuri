@@ -1,0 +1,494 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Noto Sans TC', 'Poppins', sans-serif;
+    background-color: rgb(110, 112, 71);
+    overflow-x: hidden;
+}
+
+
+/* 頁首 */
+nav {
+    background-color: #725A40;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav li.logo-container {
+    height: auto;
+}
+
+nav a {
+    height: 100%;
+    padding: 10px 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: bisque;
+}
+
+nav a:hover {
+    background-color: rgb(110, 112, 71);
+    border-radius: 13px;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+/* Logo 樣式 */
+.logo {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+.logo-container a {
+    padding: 5px 20px;
+}
+
+.logo-container a:hover {
+    background-color: transparent;
+}
+
+/* 頁首sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #725a40d2;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar li:not(:first-child) {
+    text-align: center;
+}
+
+.sidebar li:not(:first-child) a {
+    justify-content: center;
+    padding: 20px 30px;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.sidebar li:first-child a {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+}
+
+.sidebar li:first-child a:hover {
+    border-radius: 0;
+}
+
+.sidebar li:first-child a svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.menu-button {
+    display: none;
+}
+
+
+/* 響應式 Sidebar */
+@media(max-width: 768px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    nav>ul {
+        justify-content: center;
+    }
+
+    .logo-container {
+        margin-right: 0;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-button {
+        position: absolute;
+        right: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .sidebar li a {
+        font-size: 20px;
+    }
+
+    .sidebar li:not(:first-child) {
+        margin-bottom: 50px;
+    }
+
+    .sidebar li:not(:first-child):last-child {
+        margin-bottom: 0;
+    }
+
+    .sidebar li:not(:first-child) a {
+        padding: 18px 30px;
+    }
+
+    .sidebar li:not(:first-child) a:hover {
+        border-radius: 0;
+    }
+}
+
+/* 倫撥圖 */
+* {
+    box-sizing: border-box
+}
+
+/* 幻燈片容器 */
+.slideshow-container {
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    margin-bottom: 0;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    display: block;
+    width: 100%;
+    max-height: 75vh;
+    object-fit: cover;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* next button */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots */
+.dots-container {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* section / about 區塊 */
+.section {
+    width: 100%;
+    margin: 0;
+    padding: 60px 0;
+    background: transparent;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 0;
+}
+
+/* 文字區(左)*/
+.content-section {
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-section .title h1 {
+    font-size: 50px;
+    margin: 0 0 16px 0;
+    color: bisque;
+    letter-spacing: 0.2em;
+}
+
+.content-section .content h3 {
+    margin-top: 8px;
+    color: bisque;
+    font-size: 23px;
+}
+
+.content-section .content p {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: wheat;
+}
+
+.content-section .button a,
+.content-section .read-more {
+    display: inline-block;
+    margin-top: 14px;
+    color: bisque;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* 圖片區(右) */
+.img-section {
+    flex: 0 0 35%;
+    max-width: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* 響應式 about區塊 */
+@media (max-width: 900px) {
+    .container {
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .img-section {
+        order: 2;
+        width: 100%;
+        max-width: 680px;
+        margin-top: 8px;
+    }
+
+    .img-section img {
+        max-height: 500px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .content-section {
+        order: 1;
+        width: 100%;
+    }
+
+    .content-section .title h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .content-section .content .button {
+        text-align: center;
+    }
+
+    .content-section .content .button a {
+        padding: 9px 30px;
+    }
+
+    .content-section .social {
+        text-align: center;
+    }
+}
+
+/* 按鈕樣式 */
+.content-section .content .button {
+    margin-top: 30px;
+}
+
+.content-section .content .button a {
+    background-color: #725A40;
+    padding: 12px 40px;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+}
+
+.content-section .content .button a:hover {
+    background-color: bisque;
+    color: #725A40;
+}
+
+/* 社群圖示 */
+.content-section .social {
+    margin-top: 40px;
+}
+
+.content-section .social i {
+    color: rgb(219, 127, 15);
+    font-size: 30px;
+    padding: 0 10px;
+}
+
+.content-section .social i:hover {
+    color: #9DA6AB;
+}
+
+/* QA頁面 */
+/* div頁尾 */
+.footerContainer {
+    background-color: #725A40;
+}
+.footerBox {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: bisque;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i {
+    font-size: 2em;
+    color: #725A40;
+    opacity: 0.9;
+}
+.socialIcons a:hover {
+    background-color: #725A40;
+    transition: 0.5s;
+}
+.socialIcons a:hover i {
+    color: bisque;
+    transition: 0.5s;
+}
+
+/* 響應式 */
+@media (max-width: 700px) {
+    .socialIcons a {
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+/* div頁尾結束 */
+
+/* footer */
+footer {
+    background-color: black;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+/* footer結束 */
+
+
+/* 動畫效果 */
+.fade-in {
+    animation: fadeIn 1.5s ease-in;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

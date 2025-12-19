@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甜螺 katatsumuri</title>
+    <link rel="icon" href="../../小專/image/logo.png">
+    <link rel="stylesheet" href="kata.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font-awesome - Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+</head>
+
+<body>
+    <!-- 頁首 -->
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="kata.html"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                        viewBox="0 -960 960 960" width="26px" fill="bisque">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a href="https://www.instagram.com/katatsumuri_2020/">instagram</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100064318952721&mibextid=LQQJ4d">Facebook</a></li>
+            <li><a href="news.html">最新消息</a></li>
+            <li><a href="product.html">甜點介紹</a></li>
+            <li><a href="QA.html">常見問題</a></li>
+            <li><a href="kata.html">主頁</a></li>
+        </ul>
+
+        <ul>
+            <li class="logo-container"><a href="kata.html"><img src="../../小專/image/logo.png" alt="katatsumuri"
+                        class="logo"></a>
+            </li>
+            <li class="hideOnMobile"><a href="https://www.instagram.com/p/Cnb8r9DvZxL/">Instagram</a></li>
+            <li class="hideOnMobile"><a
+                    href="https://www.facebook.com/profile.php?id=100064318952721&mibextid=LQQJ4d">Facebook</a></li>
+            <li class="hideOnMobile"><a href="news.html">最新消息</a></li>
+            <li class="hideOnMobile"><a href="product.html">甜點介紹</a></li>
+            <li class="hideOnMobile"><a href="QA.html">常見問題</a></li>
+            <li class="hideOnMobile"><a href="kata.html">主頁</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="26px" viewBox="0 -960 960 960" width="26px" fill="bisque">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+
+    <!-- 幻燈片容器 -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="../../小專/image/螺酥.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="../../小專/image/塔.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="../../小專/image/蛋黃酥.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="../../小專/image/介紹.png" style="width:100%">
+        </div>
+
+        <!-- 前後按鍵 -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- 小圓點 -->
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+
+    <!-- section -->
+    <div class="section">
+        <div class="container">
+            <div class="content-section">
+                <div class="title">
+                    <h1 class="fade-in">關於甜螺</h1>
+                </div>
+                <div class="content fade-in">
+                    <h3>甜螺的命名由來</h3>
+                    <p>位於雲林的西螺在三百多年前，因為地形與田螺相似，而湊巧濁水溪對岸的彰化北斗地區也很像田螺，經過協議後將北斗稱為東螺，而位於對面的我們稱為西螺。
+                        <br>
+                        <br>基於田螺一詞，將甜點的甜字結合，因此取名為「甜螺」，而後面加上日文「カタツムリ」則是蝸牛的意思，除了本身偏愛日本文化外，也預計將店面打造成昭和懷舊風。
+                        <br>期許自己能夠貫徹日本職人的精神，注重每個細節並要求自己，希望像隻蝸牛一樣，步伐雖然緩慢但從不中途折返。
+                        <br>
+                        <br>Logo改以樸實的線條勾勒出簡約的田螺、蝸牛樣貌，身上的殼刻意以同心圓去構成，就像棒棒糖一樣結合了「甜」的意念，將品牌概念完整呈現。
+                    </p>
+                    <div class="button">
+                        <a href="https://www.instagram.com/p/Cnb8r9DvZxL/">Read More</a>
+                    </div>
+                </div>
+                <div class="social fade-in">
+                    <a href="https://www.instagram.com/katatsumuri_2020/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100064318952721&mibextid=LQQJ4d"><i
+                            class="fab fa-facebook"></i></a>
+                    <a
+                        href="https://www.google.com/maps/place/%E7%94%9C%E8%9E%BA%E3%82%AB%E3%82%BF%E3%83%84%E3%83%A0%E3%83%AA(%E5%85%AC%E4%BC%91%E6%97%A5%E8%AB%8B%E5%8F%83%E8%80%83%E7%A4%BE%E7%BE%A4%EF%BC%89/@23.8018373,120.4612347,18z/data=!4m6!3m5!1s0x346eb54e348db515:0x300202f6b535d0d7!8m2!3d23.801837!4d120.462284!16s%2Fg%2F11k4fqyy0z?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D"><i
+                            class="fab fa-google"></i></a>
+                </div>
+            </div>
+            <div class="img-section fade-in">
+                <img src="../../小專/image/外觀.jpg" alt="甜螺外觀">
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p class="copyright">Copyright © 2020 甜螺甜點工作室 All Right Reserved.</p>
+    </footer>
+
+    <script src="kata.js"></script>
+</body>
+
+</html>

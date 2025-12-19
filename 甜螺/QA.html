@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甜螺 katatsumuri</title>
+    <link rel="icon" href="../../小專/image/logo.png">
+    <link rel="stylesheet" href="kata.css">
+    <link rel="stylesheet" href="QA.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font-awesome - Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+</head>
+
+<body>
+    <!-- 頁首 -->
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="kata.html"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                        viewBox="0 -960 960 960" width="26px" fill="bisque">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a href="https://www.instagram.com/katatsumuri_2020/">instagram</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100064318952721&mibextid=LQQJ4d">Facebook</a></li>
+            <li><a href="news.html">最新消息</a></li>
+            <li><a href="product.html">甜點介紹</a></li>
+            <li><a href="QA.html">常見問題</a></li>
+            <li><a href="kata.html">主頁</a></li>
+        </ul>
+
+        <ul>
+            <li class="logo-container"><a href="kata.html"><img src="../../小專/image/logo.png" alt="katatsumuri"
+                        class="logo"></a>
+            </li>
+            <li class="hideOnMobile"><a href="https://www.instagram.com/p/Cnb8r9DvZxL/">Instagram</a></li>
+            <li class="hideOnMobile"><a
+                    href="https://www.facebook.com/profile.php?id=100064318952721&mibextid=LQQJ4d">Facebook</a></li>
+            <li class="hideOnMobile"><a href="news.html">最新消息</a></li>
+            <li class="hideOnMobile"><a href="product.html">甜點介紹</a></li>
+            <li class="hideOnMobile"><a href="QA.html">常見問題</a></li>
+            <li class="hideOnMobile"><a href="kata.html">主頁</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="26px" viewBox="0 -960 960 960" width="26px" fill="bisque">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+    <!-- 幻燈片容器 -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="../../小專/image/螺酥.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="../../小專/image/塔.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="../../小專/image/蛋黃酥.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="../../小專/image/介紹.png" style="width:100%">
+        </div>
+
+        <!-- 前後按鍵 -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- 小圓點 -->
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+
+
+    <!-- QA -->
+
+    <div class="qa">
+        <h1>Q & A</h1>
+    </div>
+
+    <section class="sec">
+        <button class="accordion">營業時間</button>
+        <div class="panel">
+            <br>
+            <p>📍平日營業時間：11:30～18:30，內用最後入場：17:30(離場:18:00)
+                <br>📍假日營業時間：10:30～17:30，內用最後入場：16:30(離場:17:00)
+                <br>📍每週二、三固定公休，實際公休日依社群公告為準。
+            </p>
+            <br>
+        </div>
+
+        <button class="accordion">是否接受訂位</button>
+        <div class="panel">
+            <br>
+            <p>無論平假日皆不接受訂位，皆為現場候位。
+                <br>若有包場需求，歡迎私訊粉專或IG洽詢。
+            </p>
+            <br>
+        </div>
+
+        <button class="accordion">甜點保存方式</button>
+        <div class="panel">
+            <br>
+            <p>蛋糕：最佳賞味期為冷藏2天
+                <br>塔類：最佳賞味期為2天，冷凍可保存5天(常溫退冰10-15分鐘即可享用)
+                <br>螺酥：最佳賞味期為2小時，未食用需冷凍保存最多3天(常溫退冰1-2小時即可享用)
+                <br>
+                <br>
+            </p>
+        </div>
+        <button class="accordion">宅配服務</button>
+        <div class="panel">
+            <br>
+            <p>戚風蛋糕❌：目前無提供宅配服務，僅提供店面自取服務。
+            </p>塔類、禮盒⭕：提供宅配服務，運費另計，請私訊粉專或IG洽詢。
+            </p>運送時間🚛：通常為3-5個工作天，如遇到大型節日、天氣因素或不可變因素，可能會延遲。
+            <br>
+            <br>
+        </div>
+    </section>
+
+
+    <div class="qa">
+        <h1>店面資訊</h1>
+    </div>
+
+    <div class="section2">
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1825.2356065994773!2d120.4612347!3d23.8018373!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346eb54e348db515%3A0x300202f6b535d0d7!2z55Sc6J6644Kr44K_44OE44Og44OqKOWFrOS8keaXpeiri-WPg-iAg-ekvue-pO-8iQ!5e0!3m2!1szh-TW!2stw!4v1766036727078!5m2!1szh-TW!2stw"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="detail">
+                <h3>甜螺甜點工作室</h3>
+                <p><strong>🧭地址：</strong>雲林縣西螺鎮延平路102號</p>
+                <p><strong>☎️電話：</strong>05-5869199</p>
+                <p><strong>⏰營業時間：</strong>依社群公告為準(固定休二、三)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footerContainer">
+        <section class="newsletter">
+            <p>歡迎訂閱甜螺電子報，可不定期接收到限定優惠哦！</p>
+            <form>
+                <input type="email" placeholder="請輸入您的E-mail" required>
+                <button type="submit">送出</button>
+            </form>
+        </section>
+        <div class="footerBox">
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/profile.php?id=100064318952721&mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/katatsumuri_2020/"><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-line"></i></a>
+                <a href="https://www.google.com/maps/place/%E7%94%9C%E8%9E%BA%E3%82%AB%E3%82%BF%E3%83%84%E3%83%A0%E3%83%AA(%E5%85%AC%E4%BC%91%E6%97%A5%E8%AB%8B%E5%8F%83%E8%80%83%E7%A4%BE%E7%BE%A4%EF%BC%89/@23.8018373,120.4612347,18z/data=!4m6!3m5!1s0x346eb54e348db515:0x300202f6b535d0d7!8m2!3d23.801837!4d120.462284!16s%2Fg%2F11k4fqyy0z?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D"><i class="fa-brands fa-google"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="copyright">Copyright © 2020 甜螺甜點工作室 All Right Reserved.</p>
+    </footer>
+
+
+    <script src="kata.js"></script>
+    <script src="QA.js"></script>
+</body>
+
+</html>

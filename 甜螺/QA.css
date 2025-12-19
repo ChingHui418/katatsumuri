@@ -1,0 +1,313 @@
+/* QA.css */
+.footerContainer {
+    background-color: #725A40;
+}
+
+.footerBox {
+    width: 100%;
+    padding: 5px 20px 15px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: bisque;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: #725A40;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover {
+    background-color: #725A40;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: bisque;
+    transition: 0.5s;
+}
+
+/* 倫撥圖 */
+* {
+    box-sizing: border-box
+}
+
+/* 幻燈片容器 */
+.slideshow-container {
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    margin-bottom: 0;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    display: block;
+    width: 100%;
+    max-height: 75vh;
+    object-fit: cover;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* next button */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* 懸停時，添加帶有一點透明的黑色背景色 */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots */
+.dots-container {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* 響應式 */
+@media (max-width: 700px) {
+    .socialIcons a {
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+/* div頁尾結束 */
+
+/* footer */
+/* newsletter */
+.newsletter {
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter p {
+    margin-bottom: 20px;
+}
+
+.newsletter input,
+.newsletter button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #949d9a;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.newsletter input {
+    width: 200px;
+    margin-right: 15px;
+}
+
+.newsletter button {
+    width: 80px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+/* footer結束 */
+
+
+/* QA 頁面 */
+.accordion-container {
+    max-width: 70%;
+    margin: 100px auto 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 打開、關閉 QA 的按鈕 */
+.sec {
+    position: relative;
+    transform: translate(13%, -2%);
+}
+
+.accordion {
+    background-color: #eee;
+    color: black;
+    cursor: pointer;
+    padding: 20px;
+    width: 75%;
+    margin: 0;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    transition: 0.4s;
+    font-size: 16px;
+}
+
+.accordion.active,
+.accordion:hover {
+    background-color: rgba(255, 228, 196, 0.899);
+}
+
+.panel {
+    width: 75%;
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.panel.show {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.accordion.active:after {
+    content: "\2796";
+}
+
+/* 響應式調整 */
+@media (max-width: 768px) {
+    .accordion-container {
+        max-width: 90%;
+        margin: 60px auto 80px;
+    }
+}
+
+
+/* 店面資訊 */
+.qa {
+    text-align: center;
+    margin: 60px 0;
+    color: bisque;
+}
+.map {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.map iframe {
+    width: 50%;
+    height: 400px;
+    padding: 20px;
+    border: none;
+    margin-bottom: 50px;
+}
+.detail h3 {
+    color: bisque;
+    font-size: 26px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid bisque;
+    padding-bottom: 10px;
+}
+.detail p strong {
+    color: bisque;
+    display: inline-block;
+    font-size: 18px;
+    width: 120px;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+.detail p {
+    color: bisque;
+    font-size: 16px;
+}
+@media (max-width: 768px) {
+    .map {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 10px;
+    }
+    .map iframe {
+        width: 100%;
+        height: 300px;
+    }
+    .detail {
+        width: 100%;
+        padding: 10px;
+    }
+    .detail h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .detail p {
+        font-size: 16px;
+        margin: 12px 0;
+    }
+    .detail p strong {
+        font-size: 18px;
+        width: 100px;
+        white-space: nowrap;
+        margin-right: 30px;
+    }
+}
