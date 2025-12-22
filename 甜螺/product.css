@@ -167,6 +167,9 @@ footer {
     background-color: bisque;
     border-radius: 8px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
 }
 
 .content:hover {
@@ -181,6 +184,8 @@ footer {
     color: rgb(110, 112, 71);
     font-size: 14px;
     line-height: 1.6;
+    flex-grow: 1;
+    text-align: center;
 }
 
 .content h4 {
@@ -188,11 +193,17 @@ footer {
     padding: 15px;
     margin: 0;
     color: #725A40;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .content img {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    height: 250px;
+    object-fit: cover;
 }
 
 /* 分類紐 */
@@ -243,6 +254,7 @@ footer {
     float: left;
     width: calc(25% - 20px);
     margin: 10px;
+    
     display: none;
     background-color: bisque;
     border-radius: 8px;
@@ -255,18 +267,22 @@ footer {
     .column {
         width: calc(50% - 20px);
     }
-
+    .content {
+        min-height: 380px;
+    }
     .content img {
-        height: auto;
+        height: 220px;
     }
 }
 @media (max-width: 600px) {
     .column {
         width: calc(100% - 20px);
     }
-
+    .content {
+        min-height: 420px;
+    }
     .content img {
-        height: auto;
+        height: 280px;
     }
 }
 
